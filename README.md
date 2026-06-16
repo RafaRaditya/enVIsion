@@ -35,16 +35,6 @@ The platform consists of **five core responsive web pages**, each structured wit
 
 ---
 
-## 📱 Responsiveness & UI/UX Standards
-
-Adhering strictly to **Human-Computer Interaction (HCI)** principles, the website incorporates fluid layout adjustments to deliver an optimized user experience across desktops, tablets, and mobile devices:
-- Implements the `meta viewport` tag for multi-device scalability.
-- Utilizes an **External CSS stylesheet** built entirely with custom box positioning (no `<table>` tags for layouts).
-- Employs **CSS Media Queries (`@media screen`)** triggered below a **768px** viewport breakpoint to ensure seamless mobile-phone readability.
-- Strictly programmed without any external frameworks (Bootstrap, Tailwind, or React) to preserve pure vanilla engine performance.
-
----
-
 ## 📂 Directory Structure
 
 ```text
