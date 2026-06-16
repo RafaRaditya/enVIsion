@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eNVision | Place Order</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header-border">
+    <header>
+      <a href="index.html" class="logo" id="header-logo">eNVision</a>
+      <nav class="nav-menu" id="header-nav">
+        <a href="index.html" class="nav-item" id="nav-home">Home</a>
+        <a href="products.html" class="nav-item" id="nav-products">Products</a>
+        <a href="rewards.html" class="nav-item" id="nav-rewards">Rewards</a>
+        <a href="about.html" class="nav-item" id="nav-about">About Us</a>
+        <a href="order.html" class="nav-item active" id="nav-order">Order</a>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Main Content Area -->
+  <main>
+    <div class="order-container">
+      <div class="order-card" id="order-card-container">
+        <form id="order-form">
+          <!-- Name Component -->
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" placeholder="Enter name" class="form-input-text" autocomplete="name">
+            <span class="error-message" id="name-error"></span>
+          </div>
+
+          <!-- Email Component -->
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" id="email" placeholder="Enter email" class="form-input-text" autocomplete="email">
+            <span class="error-message" id="email-error"></span>
+          </div>
+
+          <!-- Payment Method Component -->
+          <div class="form-group">
+            <label class="form-label">Payment Method</label>
+            <div class="payment-grid">
+              <!-- Transfer Option -->
+              <div class="payment-card" id="card-transfer">
+                <input type="radio" id="pay-transfer" name="payment-method" value="Transfer">
+                <span class="payment-circle"></span>
+                <span class="payment-text">Transfer</span>
+              </div>
+
+              <!-- Cash Option -->
+              <div class="payment-card" id="card-cash">
+                <input type="radio" id="pay-cash" name="payment-method" value="Cash">
+                <span class="payment-circle"></span>
+                <span class="payment-text">Cash</span>
+              </div>
+            </div>
+            <span class="error-message" id="payment-error"></span>
+          </div>
+
+          <!-- Addons Component -->
+          <div class="form-group">
+            <label class="form-label">Addons</label>
+            <div class="addons-grid">
+              <!-- Addon 1 -->
+              <label class="addon-card" id="card-addon-1">
+                <input type="checkbox" id="addon-blue-light" value="Blue Light Filter Coating">
+                <span class="addon-square"></span>
+                <span class="addon-text">Blue Light Filter Coating</span>
+              </label>
+
+              <!-- Addon 2 -->
+              <label class="addon-card" id="card-addon-2">
+                <input type="checkbox" id="addon-leather-case" value="Premium Leather Hard Case">
+                <span class="addon-square"></span>
+                <span class="addon-text">Premium Leather Hard Case</span>
+              </label>
+
+              <!-- Addon 3 -->
+              <label class="addon-card" id="card-addon-3">
+                <input type="checkbox" id="addon-warranty" value="1-Year Extended Warranty">
+                <span class="addon-square"></span>
+                <span class="addon-text">1-Year Extended Warranty</span>
+              </label>
+            </div>
+            <span class="error-message" id="addons-error"></span>
+          </div>
+
+          <!-- Place Order Button -->
+          <button type="submit" class="btn-submit" id="btn-submit">Place order</button>
+
+          <!-- Success Alert Area -->
+          <div class="form-success-area" id="success-area">
+            <span class="form-success-text">Order placed successfully! Thank you for shopping with eNVision.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer-border">
+    <footer>
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" id="footer-logo">eNVision</a>
+      </div>
+
+      <div class="footer-col" id="footer-quick-links">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="products.html" class="footer-link">Products</a></li>
+          <li><a href="rewards.html" class="footer-link">Rewards</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="order.html" class="footer-link">Order</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" id="footer-contact-info">
+        <h4 class="footer-col-title">Contact Info</h4>
+        <div class="footer-info-text">
+          <p><strong>Email:</strong> contact@envision.com</p>
+          <p style="margin-top: 12px;"><strong>Phone:</strong> +123 456 7890</p>
+          <p style="margin-top: 12px;"><strong>Address:</strong> Jl. Musyawarah No.117, RT.6/RW.9, Kb. Jeruk, Kec. Kb.
+            Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530</p>
+        </div>
+      </div>
+
+      <div class="footer-col" id="footer-subscription">
+        <h4 class="footer-col-title">Subscribe to our newsletter</h4>
+        <p class="footer-newsletter-text">Stay updated with our latest collections and exclusive offers.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Email address" class="newsletter-input" id="newsletter-email" required>
+          <button type="submit" class="btn-subscribe" id="btn-subscribe">Subscribe</button>
+          <span class="newsletter-success" id="newsletter-success">Thank you for subscribing!</span>
+        </form>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
